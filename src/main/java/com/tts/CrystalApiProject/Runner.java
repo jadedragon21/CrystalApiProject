@@ -8,10 +8,14 @@
 //import org.springframework.stereotype.Component;
 //import com.tts.CrystalApiProject.service.CrystalService;
 
-//uncomment this out below to run once and then comment the file out entirely
-//so it doesn't reseed the database with duplicates from your data.sql file
+
+////
 //TODO implement the gems make sure to uncomment and run again and comment out
 //TODO the repo below and add a new Gem Repository at a later date.
+//uncomment @Component out below to run once and then comment the file out entirely
+//so it doesn't reseed the database with duplicates from your data.sql file
+////
+
 //@Component
 //public class Runner implements CommandLineRunner {
 //
