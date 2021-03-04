@@ -108,7 +108,7 @@ public class CrystalController {
     })
     public ResponseEntity<Void> createCrystal(@RequestBody @Valid Crystal crystal, BindingResult bindingResult) {
         if (crystalRepository.findById(crystal.getId()).isPresent()) {
-            bindingResult.rejectValue("userId", "error.userId", "Crystal Id is already taken");
+            bindingResult.rejectValue("crystalId", "error.crystalId", "Crystal Id is already taken");
         }
 
         if (bindingResult.hasErrors()) {

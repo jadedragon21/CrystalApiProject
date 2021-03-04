@@ -24,4 +24,14 @@ public class CrystalServiceImpl implements CrystalService {
     public Iterable<Crystal> getAllCrystals() {
         return crystalRepository.findAll();
     }
+
+    @Override
+    public Optional<Crystal> getGems(Long id) {
+        return crystalRepository.findById(id);
+    }
+
+    @Override
+    public Iterable<Crystal> getAllGems() {
+        return crystalRepository.findAll();
+    }
 }
